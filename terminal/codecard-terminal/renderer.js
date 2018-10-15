@@ -59,7 +59,7 @@ function detectBadge(){
     }
   
     for (var i = 0; i < ports.length; i++) {
-      if (ports[i].comName.includes('SLAB') || ports[i].comName.includes('wchusbserial')) {
+      if (ports[i].comName.includes('COM') || ports[i].comName.includes('wchusbserial')) {
         serialport = ports[i].comName;
         status.textContent = 'Card detected at: \'' + serialport + '\''
         connectBtn.innerHTML = 'Connect'
