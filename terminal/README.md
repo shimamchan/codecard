@@ -1,7 +1,5 @@
-
-![](img/code-card-terminal.png)
 # Code Card Terminal
-
+![](img/code-card-terminal.png)
 To make it easier to connect to your Code Card, we created a custom Terminal App. This app is built with [Electron](https://electronjs.org/) so it is cross-platform.
 
 The Code Card has a serial-usb chip. We use serial communication to configure the Code Card wifi and button settings.
