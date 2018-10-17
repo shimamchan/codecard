@@ -34,14 +34,14 @@ String httpRequest(WiFiClient& client, String httpMethod, String url, String hos
     return "";
   }
 
-  char status[32] = {0};
-  client.readBytesUntil('\r', status, sizeof(status));
-  if (strcmp(status, "HTTP/1.1 200 OK") != 0) {
-    Serial.print(F("  Unexpected response: "));
-    Serial.println(status);
-    client.stop();
-    return "";
-  }
+//  char status[32] = {0};
+//  client.readBytesUntil('\r', status, sizeof(status));
+//  if (strcmp(status, "HTTP/1.0 200 OK") != 0) {
+//    Serial.print(F("  Unexpected response: "));
+//    Serial.println(status);
+//    client.stop();
+//    return "";
+//  }
     
   char findConntentType[] = "ype: ";
   if (client.find(findConntentType)) {
