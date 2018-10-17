@@ -1,12 +1,3 @@
-## Introduction
-
-In this guide, we'll show you a few simple steps to launch an Oracle Linux instance on Oracle Cloud Infrastructure, and then proceed to launch your Fn Functions server & run your cloud functions. The path that we will take is as follows:
-
- - Launch your Oracle Linux instance in the Oracle cloud
- - Install Oracle Container Runtime for Docker
- - Install the Fn Functions Server
- - Configure and run your Oracle Code Card Fn functions
-
 ## Task flow overview to launch your Oracle Linux instance
 
 First we follow these steps to launch your Oracle Linux instance:
@@ -85,10 +76,6 @@ After a few seconds, the status is changed from "PROVISIONING" to "running".
 You now click the instance name "Oracle-Linux-7.4-vm1" to see the details of the instance and write down the public IP address which you'll use to connect to the instance in the next step.
 
 ![alt text](images/oracle-cloud-infrastructure_instance-details.png "Oracle Cloud Infrastructure - Instance Details")
-
-## Configuring your Fn Server
-
-Your Oracle Linux instance is now running, and ready to be configured to host your cloud functions.
 
 ### Connect to your Oracle Linux instance
 
