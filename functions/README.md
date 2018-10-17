@@ -61,7 +61,7 @@ Functions are small but powerful blocks of code that generally do one simple thi
 
 To create a hello world function, run the following command.
 
-	fn init --runtime go --trigger http hello=
+	fn init --runtime go --trigger http hello
 
 This will create a simple function in the directory hello, so let's cd into it:
 
