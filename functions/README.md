@@ -1,3 +1,5 @@
+![](images/fn.png)
+
 ## Introduction
 
 In this guide, we'll show you a few simple steps to launch an Oracle Linux instance on Oracle Cloud Infrastructure, and then proceed to launch your [Fn Project](https://fnproject.io/) Functions server & run your cloud functions. The path that we will take is as follows:
@@ -157,3 +159,4 @@ And test on your browser
 	http://`linux-instance-public-ip`:8080/t/codecard/button1-trigger
 
 Now you are ready to configure your Code Card to point to your new function! Go to the [Code Card Teminal](https://github.com/noelportugal/codecard/tree/master/terminal) page to learn how to configure your Card using serial communication.
+

@@ -1,5 +1,5 @@
 # Code Card Icons
-
+You can use any of the pre-configured name icons or you can upload your own.
 
 
 | Name | Image |
