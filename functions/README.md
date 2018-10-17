@@ -19,10 +19,10 @@ Your Oracle Linux instance is now running, and ready to be configured to host yo
 While connected to your Oracle Linux instance, run the following commands to install and configure the Docker container runtime.
 
 ```
-$ sudo yum install docker-engine -y
-$ sudo usermod -aG docker opc
-$ sudo systemctl enable docker
-$ sudo systemctl start docker
+sudo yum install docker-engine -y
+sudo usermod -aG docker opc
+sudo systemctl enable docker
+sudo systemctl start docker
 ```
 
 Before proceeding further, logout of the current SSH session, & then reconnect to your Oracle Linux instance and log back in vis SSH. _This is to ensure group membership configured in the previous step is correctly applied and in effect._
@@ -31,42 +31,27 @@ Once you have reconnected to the instance, run the following command to install 
 ### Configure Oracle Linux for Fn
 
 ```
-$ sudo curl -LSs https://raw.githubusercontent.com/fnproject/cli/master/install | sh
+curl -LSs https://raw.githubusercontent.com/fnproject/cli/master/install | sh
 ```
 
 At completion, the installation will output the Fn CLI version - per the below example output.
 
 ```
-$
-fn version 0.4.155
+fn version 0.5.16
+
         ______
        / ____/___
       / /_  / __ \
      / __/ / / / /
     /_/   /_/ /_/`
-$
+
 ```
 
 ### Start your Fn Server
 
-Run the following command which will start Fn in single server mode, using an embedded database and message queue.
+Run the following command which will start Fn in the background as a single server mode, using an embedded database and message queue.
 
-```
-$ sudo /usr/local/bin/fn start &
-
-...
-$ time="2018-09-10T07:58:06Z" level=info msg="available cpu" availCPU=2000 totalCPU=2000
-$ time="2018-09-10T07:58:06Z" level=info msg="sync and async cpu reservations" cpuAsync=1600 cpuAsyncHWMark=1280 cpuSync=400
-
-        ______
-       / ____/___
-      / /_  / __ \
-     / __/ / / / /
-    /_/   /_/ /_/
-        v0.3.548
-
-$ time="2018-09-10T07:58:06Z" level=info msg="Fn serving on `:8080`" type=full
-```
+	fn start -d
 
 Your Fn server is now instantiated and running in the background.
 
@@ -76,47 +61,29 @@ Functions are small but powerful blocks of code that generally do one simple thi
 
 To create a hello world function, run the following command.
 
-```
-$ fn init --runtime go hello
-```
+	fn init --runtime go --trigger http hello=
 
 This will create a simple function in the directory hello, so let's cd into it:
 
-```
-$ cd hello
-```
-
-### Run your function locally
-
-```
-$ fn run
-Building image hello:0.0.1 .....................................
-{"message":"Hello World"}
-$
-```
+	cd hello
 
 ### Deploy your functions to your local Fn server
 
-```
-$ fn deploy --app myapp --local
-Bumped to version 0.0.2
-Building image hello:0.0.2 .......
-Updating route /hello using image hello:0.0.2...
-$
-```
+	fn deploy --app codecard --local
+
 
 Now you can call your function locally using curl:
 
 ```
-curl http://localhost:8080/r/myapp/hello
+curl http://localhost:8080/t/codecard/hello-trigger
 ```
 
 or, using the fn client:
 
 ```
-fn call myapp /hello
+fn invoke codecard hello
 ```
 
-or in a browser: http://`linux-instance-public-ip`:8080/r/myapp/hello
+or in a browser: http://`linux-instance-public-ip`:8080/t/codecard/hello-trigger
 
 That's it! You just deployed your first function and called it. You are now ready to configure your Code Card to access your cloud function!
