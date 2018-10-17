@@ -14,7 +14,7 @@ Follow [these instructions](oci.md) to create an Oracle Linux instance and the c
 
 Your Oracle Linux instance is now running, and ready to be configured to host your cloud functions.
 
-### Configure Oracle Linux for Fn
+### Install and configure Docker
 
 While connected to your Oracle Linux instance, run the following commands to install and configure the Docker container runtime.
 
@@ -27,6 +27,8 @@ $ sudo systemctl start docker
 
 Before proceeding further, logout of the current SSH session, & then reconnect to your Oracle Linux instance and log back in vis SSH. _This is to ensure group membership configured in the previous step is correctly applied and in effect._
 Once you have reconnected to the instance, run the following command to install the Fn CLI tool (this will download a shell script and execute it).
+
+### Configure Oracle Linux for Fn
 
 ```
 $ sudo curl -LSs https://raw.githubusercontent.com/fnproject/cli/master/install | sh
