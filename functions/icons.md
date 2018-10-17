@@ -17,4 +17,21 @@
 |  blockchain  | ![](images/icons/blockchain.png)  |
 |  champion  | ![](images/icons/champion.png)  |
 |  chatbots  | ![](images/icons/chatbots.png)  |
-|  containers  | ![](images/icons/containers.png)  |
+|  db  | ![](images/icons/db.png)  |
+|  duke  | ![](images/icons/duke.png)  |
+|  fail  | ![](images/icons/fail.png)  |
+|  java  | ![](images/icons/java.png)  |
+|  javascript  | ![](images/icons/javascript.png)  |
+|  jduchess  | ![](images/icons/jduchess.png)  |
+|  mail  | ![](images/icons/mail.png)  |
+|  microservices  | ![](images/icons/microservices.png)  |
+|  nighthacker  | ![](images/icons/nighthacker.png)  |
+|  opensource  | ![](images/icons/opensource.png)  |
+|  twitter  | ![](images/icons/twitter.png)  |
+
+
+### Backgrounds
+| Name | Image |
+|----------|----------|
+|  codeone  | ![](images/icons/codeone.png)  |
+|  oracle  | ![](images/icons/oracle.png)  |
