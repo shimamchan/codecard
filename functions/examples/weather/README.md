@@ -37,7 +37,7 @@ const getWeather = async url => {
 
 ```
 
-Get a free [openweather]() API key [here](https://openweathermap.org/appid), and replace the url variable [APP_ID] with your new key.
+Get a free [openweather API key](https://openweathermap.org/appid), and replace the url variable [APP_ID] with your new key.
 
 Modify the file [package.json](package.json) to include the axios http library as a dependency.
 
@@ -56,4 +56,4 @@ Deploy your function:
 and test:
 
 	http://linux-instance-public-ip:8080/t/codecard/weather-trigger
-Now you can use the [Code Card Termina](https://github.com/noelportugal/codecard/tree/master/terminal) to assign the Fn function to a button.
+Now you can use the [Code Card Terminal](https://github.com/noelportugal/codecard/tree/master/terminal) to assign the Fn function to a button.
