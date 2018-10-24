@@ -18,6 +18,19 @@ The USB-Serial port will have different names depending on your OS:
 -	Mac: /dev/tty.wchusbserial[XXXX]
 -	Linux: /dev/ttyUSB[X]
 
+##### Steps
+
+1. Connect to the device with the emulator for your OS (baud rate = 115200)
+2. Once connected, you'll need to reset the device by flipping the power switch off then on again
+3. Type help in the emulator to bring up a list of commands
+
+To change to wifi profile
+
+	ssid={your-ssid}
+	password={your-wifi-password}
+
+Keep in mind that pausing for 2 seconds while typing will automatically enter the command. It may be easier to pre-type the commands elsewhere and copy-paste them into the window.
+
 ### Manual Installation
 
 First [download](https://github.com/noelportugal/codecard.git) or clone (`git clone https://github.com/noelportugal/codecard.git`) this repository.
@@ -32,7 +45,7 @@ Follow OS build specific instructions [here](https://electronjs.org/docs/develop
 * For Windows you must install using the following flags:
 	`npm install --global --production windows-build-tools`
 
-### Complie
+### Compile
 If you want to compile the Electron app use [electron-packager](https://github.com/electron-userland/electron-packager). Make sure you are in the terminal directory.
 	
 	npm install electron-packager -g
