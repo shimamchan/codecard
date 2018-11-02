@@ -8,6 +8,8 @@
 #include <EEPROM.h>
 #include <GxEPD2_BW.h>        // Download/Clone and put in Arduino Library https://github.com/ZinggJM/GxEPD2
 
+// Also make sure you have the Adafruit GFX library
+
 #define WAKE_PIN 16
 #define BAUD_SPEED 115200
 
@@ -38,8 +40,8 @@ const char* projectVersion = "1.0";
 const char* projectAuthor = "Oracle Groundbreakers";
 const char* projectSite = "developer.oracle.com/codecard";
 
-const char* defaultSSID = "";
-const char* defaultPassword = "";
+const char* defaultSSID = "CHANGE_TO_SSID";
+const char* defaultPassword = "CHANGE_TO_PASSWORD";
 const char* defaultUrl = "https://apex.oracle.com/pls/apex/appslab/functions/master";
 const char* defaultFingerprint = "01 92 1A 05 84 F5 36 14 85 E3 9C 87 93 4C D0 76 64 B1 CE 9D";
 

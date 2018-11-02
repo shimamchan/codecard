@@ -8,11 +8,19 @@ bool wifiConnect() {
   String ssid = EEPROM.get(0*maxValue, arrayToStore);
   String password = EEPROM.get(1*maxValue, arrayToStore);
 
+//  if (ssid == "") { 
+//    Serial.println(); 
+//    Serial.println(F("Cannot connect to WiFi because there is no ssid defined. Please save a value for 'ssid' and 'password'.")); 
+//    Serial.println(F(">>>"));
+//    return false; 
+//  }
+
   if (ssid == "") { 
+    ssid = defaultSSID;
+    password = defaultPassword;
     Serial.println(); 
-    Serial.println(F("Cannot connect to WiFi because there is no ssid defined. Please save a value for 'ssid' and 'password'.")); 
-    Serial.println(F(">>>"));
-    return false; 
+    Serial.println(F("Connecting to default SSID and Password")); 
+    Serial.println(F(">>>"));    
   }
   
   WiFi.mode(WIFI_STA);
