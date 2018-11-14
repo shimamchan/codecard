@@ -124,7 +124,7 @@ To checkout all available templates go to Oracle Events App -> Code One --> Code
 
 Let's create our first Code Card function!
 
-	fn init --runtime go --trigger http button1
+	fn init --runtime node --trigger http button1
 	cd button1
 
 Now lets edit the func.js file using `nano	` or `vi`.
