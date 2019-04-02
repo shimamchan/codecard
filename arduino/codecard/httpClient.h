@@ -28,11 +28,11 @@ String httpRequest(WiFiClient& client, String httpMethod, String url, String hos
     }
   }       
                             
-  if (client.println() == 0) {
-    Serial.println(F("  Failed to send request"));
-    Serial.println(F(">>>"));   
-    return "";
-  }
+//  if (client.println() == 0) {
+//    Serial.println(F("  Failed to send request"));
+//    Serial.println(F(">>>"));   
+//    return "";
+//  }
 
 //  char status[32] = {0};
 //  client.readBytesUntil('\r', status, sizeof(status));
