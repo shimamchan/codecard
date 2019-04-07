@@ -1,15 +1,15 @@
 ## Code Card Arduino
 ![](images/arduino.png)
 
-The Code Card runs on an [ESP8266](https://en.wikipedia.org/wiki/ESP8266) Wi-fi Microcontroller.  
+The Code Card runs on an [ESP8266](https://en.wikipedia.org/wiki/ESP8266) Wi-fi microcontroller.  
 
 The ESP8266 is a low-cost Wi-Fi microchip with full TCP/IP stack and microcontroller capability produced by manufacturer Espressif Systems. The processor is an L106 32-bit RISC microprocessor core running at 80 MHz, with 4 MiB external QSPI flash. The ESP8266 supports IEEE 802.11 b/g/n Wi-Fi, WEP or WPA/WPA2 authentication, and also open networks.  
 
-Using the Arduino core for ESP8266, it's possible to program the ESP8266 using the Arduino IDE.  
-We have included the source code so you can modify you Code Card however you want (see the /arduino directory for Code Card source).  
+We have included the source code so you can modify you Code Card however you want!  
 
 ### Software
-You need to download the [Arduino IDE](https://www.arduino.cc/en/Main/Software) and the configure with the Arduino core for ESP8266 WiFi chip.
+You need to download the [Arduino IDE](https://www.arduino.cc/en/Main/Software) and configure to use the Arduino core for ESP8266 WiFi chip.  
+The Arduino core for ESP8266 is a C++ based firmware. With this core, the ESP8266 CPU and its Wi-Fi components can be programmed like any other Arduino device using the Arduino IDE.  
 
 ### Code Card Source Code
 Download or `git clone https://github.com/cameronsenese/codecard.git` this project and open the Arduino main file ([codecard.ino](https://github.com/noelportugal/codecard/blob/master/arduino/codecard/codecard.ino)) to get started.
@@ -18,19 +18,19 @@ Download or `git clone https://github.com/cameronsenese/codecard.git` this proje
 - /arduino/bin contains a precompiled image of the Code Card firmware
 
 ## Instructions
-The following instruction describes the setup and configuration of the Arduino IDE required to develop, update, and flash new firmware to your Code Card.  
+The following instruction describes the setup and configuration of the Arduino IDE, and the process to upload firmware to the Code Card using the Arduino IDE:
 
 1. Install the Arduino IDE version 1.8.8: https://www.arduino.cc/en/Main/Software
 2. Install the serial driver for the ESP-12F Wi-Fi chip: https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers
 3. Clone the `codecard` GitHub repository to obtaon the source code: https://github.com/cameronsenese/codecard
-5. In the Arduino IDE, go to Preferences and set the “Additional Board Managers URLs to http://arduino.esp8266.com/stable/package_esp8266com_index.json
-6. Install esp8266 support: Tools | Board | Board Manager
+4. In the Arduino IDE, go to Preferences and set the “Additional Board Managers URLs to http://arduino.esp8266.com/stable/package_esp8266com_index.json
+5. Install esp8266 support: Tools | Board | Board Manager
    - esp8266 by ESP8266 Community 2.4.2
-7. Install the required modules: Sketch | Include Libraries | Manage Libraries
+6. Install the required modules: Sketch | Include Libraries | Manage Libraries
    - ArduinoJson by Benoit Blanchon version 5.13.3
    - GxEPD2 by Jean-Marc Zingg version 1.1.0
    - Adafruit GFX Library by Adafruit 1.4.8
-2. Under Tools set the following settings:
+7. Under Tools set the following settings:
    - Board: “Generic ESP8266 Module”
    - Upload Speed “115200”
    - CPU Frequency: “80 MHz”
@@ -47,7 +47,7 @@ The following instruction describes the setup and configuration of the Arduino I
    - Erase Flash: “Only Sketch”
    - Port: This is the port that shows up once you turn on the CodeCard and press a button
    - Programmer: “ArduinoISP”
-3.  Open the codecard.ino sketch located in the /arduino directory downloaded in step 3 above
+8.  Open the codecard.ino sketch located in the /arduino directory downloaded in step 3 above
    - File | Open | codecard.ino
 11. Connect the CodeCard via USB to your computer
 12. Establish serial connection via Arduino IDE:
