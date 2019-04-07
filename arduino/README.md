@@ -1,7 +1,7 @@
 ## Code Card Arduino
 ![](images/arduino.png)
 
-The Code Card runs on a [ESP8266](https://en.wikipedia.org/wiki/ESP8266) Wi-fi Microcontroller.  
+The Code Card runs on an [ESP8266](https://en.wikipedia.org/wiki/ESP8266) Wi-fi Microcontroller.  
 
 The ESP8266 is a low-cost Wi-Fi microchip with full TCP/IP stack and microcontroller capability produced by manufacturer Espressif Systems. The processor is an L106 32-bit RISC microprocessor core running at 80 MHz, with 4 MiB external QSPI flash. The ESP8266 supports IEEE 802.11 b/g/n Wi-Fi, WEP or WPA/WPA2 authentication, and also open networks.  
 
