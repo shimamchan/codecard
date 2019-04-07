@@ -56,4 +56,4 @@ Deploy your function:
 and test:
 
 	http://linux-instance-public-ip:8080/t/codecard/weather-trigger
-Now you can use the [Code Card Terminal](https://github.com/noelportugal/codecard/tree/master/terminal) to assign the Fn function to a button.
+Now you can use the [Code Card Terminal](https://github.com/cameronsenese/codecard/tree/master/terminal) to assign the Fn function to a button.
