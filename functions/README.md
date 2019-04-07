@@ -76,7 +76,7 @@ This will create a simple function in the directory hello, so let's cd into it:
 
 ### Deploy your functions to your local Fn server
 
-	fn deploy --app codecard --local
+	fn deploy --app codecard --create-app --local
 
 
 Now you can call your function locally using curl:
@@ -158,5 +158,5 @@ And test on your browser
 
 	http://`linux-instance-public-ip`:8080/t/codecard/button1-trigger
 
-Now you are ready to configure your Code Card to point to your new function! Go to the [Code Card Teminal](https://github.com/noelportugal/codecard/tree/master/terminal) page to learn how to configure your Card using serial communication.
+Now you are ready to configure your Code Card to point to your new function! Go to the [Code Card Teminal](https://github.com/cameronsenese/codecard/tree/master/terminal) page to learn how to configure your Card using serial communication.
 
