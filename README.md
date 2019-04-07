@@ -19,8 +19,7 @@ Python script to automatically configure Code Card settings using serial connect
 The Code Card Configurator uses the pyserial module to perform configuration updates.
 
 - **[Fn Functions (FaaS)](/functions/)**  
-Configure your Code Card to run Serverless Functions on Oracle Cloud Infrastructure using the Oracle Fn project deployed to Oracle Cloud Infrastructure.  
-The Fn project is an open-source container-native serverless platform.
+Configure your Code Card to run Serverless Functions on Oracle Cloud Infrastructure using the Oracle Fn project deployed to Oracle Cloud Infrastructure. The Fn project is an open-source container-native serverless platform.
 
 - **[Helidon (Java) Microservices on Kubernetes](#helidon/README.md)**  
 Helidon (Java) Microservices on Kubernetes.. (TBC)
