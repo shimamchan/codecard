@@ -8,7 +8,7 @@ The Code Card has a serial-usb chip. We use serial communication to configure th
 
 We have pre-compiled version for [Windows](https://github.com/noelportugal/codecard/raw/master/terminal/codecard-terminal-win32-x64.zip), [Mac](https://github.com/noelportugal/codecard/raw/master/terminal/codecard-terminal-darwin-x64.zip), and [Linux](https://github.com/noelportugal/codecard/raw/master/terminal/codecard-terminal-linux-x64.zip).
 
-If your machine is not recognizing the Code Card, you might need to install the [CH340 USB-Serial drivers](https://sparks.gogo.co.nz/ch340.html).
+If your machine is not recognizing the Code Card, you might need to install the [The Silicon Labs CP2104 USB serial drivers](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers).
 
 ### Alternative
 You can also use any terminal emulator app such as [PuTTY](https://www.putty.org/) (Windows), [CoolTerm](http://freeware.the-meiers.org/CoolTermMac.zip) (Mac), or [screen](https://linux.die.net/man/1/screen) (Mac and Linux.)
@@ -33,7 +33,7 @@ Keep in mind that pausing for 2 seconds while typing will automatically enter th
 
 ### Manual Installation
 
-First [download](https://github.com/noelportugal/codecard.git) or clone (`git clone https://github.com/noelportugal/codecard.git`) this repository.
+First [download](https://github.com/cameronsenese/codecard.git) or clone (`git clone https://github.com/cameronsenese/codecard.git`) this repository.
 
 You must have NodeJs installed. We recommend using [nvm](https://github.com/creationix/nvm) to manage different versions.
 
