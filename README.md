@@ -27,7 +27,7 @@ Helidon (Java) Microservices on Kubernetes.. (TBC)
 
 - **[Programming the Code Card Firmware](/arduino/)**  
 We have included the source code here so you can modify you Code Card however you want!  
-See here for instruction on setting up your IDE to program and upload your customiations to the Code Card Firmware.
+Instructions for setting up the Arduino IDE to program and upload your customisations to the Code Card Firmware.
 
 ## How did we build the Code Card?
 We partnered with [Squarofumi](http://www.sqfmi.com/), creators of [Badgy](https://www.tindie.com/products/squarofumi/badgy-iot-badge/), an IoT badge, to create the Code Card.
