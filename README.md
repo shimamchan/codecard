@@ -11,9 +11,9 @@ Personalise the contents of your Code Card's display using the Code Card Designe
 Create different template layouts, save them to the Oracle Cloud, and then apply them to your card with the press of a button. Ths is the quickest way to get up and running.
 
 - **[Configuration Settings](/terminal/README.md)**  
-Manage your Code Card configuration via serial connection over USB. Settings such as Wi-Fi SSID & Password can be managed via serial connection.
+Manage your Code Card configuration via serial connection over USB. Settings such as Wi-Fi SSID & Password can be managed via serial connection using the Code Cards integrated CLI.
   - **[Code Card Serial Connection](/terminal/serial.md)**  
-Manually configure Code Card using a serial connection over USB. Initiate the serial connection using your favourite terminal emulation package (Putty, etc).. (TBC)
+Manually configure Code Card using a serial connection over USB. Initiate a serial connection using your favourite terminal emulation package (Putty, etc) and manage your Code Card using the integrated CLI.. (TBC)
   - **[Code Card Configurator](https://github.com/cameronsenese/codecard-configurator)**  
 Python script to automatically configure Code Card settings using serial connection over USB. Useful for restting Code Card settings back to default, or to save and batch apply custom settings.. (TBC)
 
@@ -30,4 +30,3 @@ Programming the Code Card Firmware.. (TBC)
 We partnered with [Squarofumi](http://www.sqfmi.com/), creators of [Badgy](https://www.tindie.com/products/squarofumi/badgy-iot-badge/), an IoT badge, to create the Code Card.
 
 ![](images/badgy.jpg)
-
