@@ -12,8 +12,8 @@ Use the mobile app to create different template layouts, save them to the Oracle
 
 - **[Configuration Settings](/terminal/)**  
 Manage your Code Card configuration via serial connection over USB. Settings such as Wi-Fi SSID & Password can be managed via serial connection using the integrated CLI.
-  - **[Code Card Serial Connection](https://github.com/cameronsenese/codecard/blob/master/terminal/README.md#alternative-via-terminal-emulator)**  
-Manually configure your Code Card using a serial connection over USB. Initiate a serial connection using your favourite terminal emulation package (Putty, etc.) and manage your Code Card using the integrated CLI.. (TBC)
+  - **[Terminal Emulator](https://github.com/cameronsenese/codecard/blob/master/terminal/README.md#alternative-via-terminal-emulator)**  
+Manually configure your Code Card using a serial connection over USB. Initiate a serial connection using your favourite terminal emulation package (Putty, etc.) and manage your Code Card using the integrated CLI.
   - **[Code Card Configurator](https://github.com/cameronsenese/codecard-configurator)**  
 Python script to automatically configure Code Card settings using serial connection over USB. Useful for restting Code Card settings back to default, or to save and batch apply custom settings.  
 The Code Card Configurator uses the pyserial module to perform configuration updates.
