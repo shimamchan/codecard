@@ -10,7 +10,7 @@ We have pre-compiled version for [Windows](https://github.com/noelportugal/codec
 
 If your machine is not recognizing the Code Card, you might need to install the [The Silicon Labs CP2104 USB serial drivers](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers).
 
-### Alternative via Terminal Emulator
+### Connect via Terminal Emulator
 You can also use any terminal emulator app such as [PuTTY](https://www.putty.org/) (Windows), [CoolTerm](http://freeware.the-meiers.org/CoolTermMac.zip) (Mac), or [screen](https://linux.die.net/man/1/screen) (Mac and Linux.)
 
 The USB-Serial port will have different names depending on your OS:
