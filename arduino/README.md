@@ -21,6 +21,10 @@ Download or `git clone https://github.com/cameronsenese/codecard.git` this proje
 ## Instructions
 The following instruction describes the setup and configuration of the Arduino IDE, and the process to upload firmware to your Code Card using the Arduino IDE:
 
+*Note:*
+- *Versions per component are detailled below, if you chose to deviate from the recommended - your mileage may vary!*
+- *Ensure your Code Card can connect to Wi-Fi before completing step #12*
+
 1. Install the Arduino IDE version 1.8.8: https://www.arduino.cc/en/Main/Software
 2. Install the serial driver for the ESP-12F Wi-Fi chip: https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers
 3. Clone the `codecard` GitHub repository to obtaon the source code: https://github.com/cameronsenese/codecard
@@ -48,11 +52,11 @@ The following instruction describes the setup and configuration of the Arduino I
    - Erase Flash: “Only Sketch”
    - Port: This is the port that shows up once you turn on the CodeCard and press a button
    - Programmer: “ArduinoISP”
-8. Open the codecard.ino sketch located in the /arduino directory downloaded in step 3 above
+8.  Open the codecard.ino sketch located in the /arduino directory downloaded in step 3 above
    - File | Open | codecard.ino
 9. Connect the CodeCard via USB to your computer
 10. Establish serial connection via Arduino IDE:
-    - Tools | Serial Monitor
+   - Tools | Serial Monitor
 11. Turn on the Code Card
 12. Press and hold button `A` until 5 seconds after the following output is displayed:
 ```
@@ -62,7 +66,6 @@ Shuting down...
 13. From the Arduino IDE choose Sketch | Upload
     - The Arduino IDE may compile the skectch before uploading to the Code Card.
     - The following output indicates completed firmware upload:
-
 ```
 Sketch uses 447692 bytes (89%) of program storage space. Maximum is 499696 bytes.
 Global variables use 43260 bytes (52%) of dynamic memory, leaving 38660 bytes for local variables. Maximum is 81920 bytes.
